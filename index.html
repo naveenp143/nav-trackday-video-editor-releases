@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NAV Track Day Video Editor - Free download</title>
+<meta name="description" content="Turn your Insta360 track-day video and RaceBox data into a finished video with lap times, speed, lean and a coach. Free, runs on your own Windows PC.">
+<style>
+  :root { --green:#1a7f37; --green-dark:#116329; --ink:#1f2328; --soft:#59636e; --line:#d1d9e0; --bg:#f6f8fa; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Segoe UI", system-ui, -apple-system, Arial, sans-serif; color:var(--ink); line-height:1.55; background:#fff; }
+  main { max-width:860px; margin:0 auto; padding:24px 20px 60px; }
+  header { text-align:center; padding:40px 0 24px; }
+  h1 { font-size:2.2rem; margin:0 0 8px; }
+  .tag { font-size:1.2rem; color:var(--soft); margin:0 auto 28px; max-width:620px; }
+  .btn { display:inline-block; background:var(--green); color:#fff; text-decoration:none; font-size:1.35rem; font-weight:600;
+         padding:18px 38px; border-radius:12px; box-shadow:0 3px 0 var(--green-dark); }
+  .btn:hover { background:var(--green-dark); }
+  .btn small { display:block; font-size:.85rem; font-weight:400; opacity:.9; margin-top:2px; }
+  .under { color:var(--soft); font-size:.95rem; margin-top:12px; }
+  .shot { display:block; width:100%; max-width:720px; margin:28px auto 0; border:1px solid var(--line); border-radius:10px; }
+  h2 { font-size:1.5rem; margin:48px 0 16px; border-bottom:1px solid var(--line); padding-bottom:6px; }
+  ol.steps { list-style:none; padding:0; margin:0; counter-reset:s; }
+  ol.steps > li { counter-increment:s; display:flex; gap:18px; align-items:flex-start; background:var(--bg); border:1px solid var(--line);
+                  border-radius:12px; padding:18px; margin-bottom:14px; }
+  ol.steps > li::before { content:counter(s); flex:0 0 44px; height:44px; border-radius:50%; background:var(--green); color:#fff;
+                          font-weight:700; font-size:1.3rem; display:flex; align-items:center; justify-content:center; }
+  .step-body { flex:1; }
+  .step-body b.big { font-size:1.15rem; display:block; margin-bottom:4px; }
+  /* little drawings of what Windows shows */
+  .mock { display:inline-block; margin-top:10px; background:#fff; border:1px solid #bbb; border-radius:6px; font-size:.9rem;
+          box-shadow:0 2px 6px rgba(0,0,0,.12); }
+  .menu div { padding:6px 22px; }
+  .menu .hi { background:#cce4f7; font-weight:600; }
+  .smart { background:#1f5fa8; color:#fff; padding:14px 18px; max-width:380px; border-radius:6px; }
+  .smart .t { font-size:1.15rem; font-weight:600; margin-bottom:6px; }
+  .smart u { cursor:default; }
+  .smart .run { display:inline-block; margin-top:10px; border:1px solid #fff; padding:3px 14px; }
+  .file { display:inline-block; margin-top:10px; padding:6px 12px; background:#fff; border:1px solid #bbb; border-radius:6px; font-family:Consolas, monospace; }
+  ul.plain { padding-left:20px; }
+  .faq dt { font-weight:600; margin-top:14px; }
+  .faq dd { margin:4px 0 0; color:var(--ink); }
+  .note { background:#fff8c5; border:1px solid #d4a72c; border-radius:8px; padding:12px 16px; margin-top:18px; }
+  footer { border-top:1px solid var(--line); margin-top:50px; padding-top:16px; color:var(--soft); font-size:.9rem; text-align:center; }
+  footer a, .faq a { color:#0969da; }
+  @media (max-width:560px) { h1 { font-size:1.7rem; } .btn { font-size:1.15rem; padding:16px 24px; } ol.steps > li { flex-direction:column; } }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>NAV Track Day Video Editor</h1>
+  <p class="tag">Drop in your Insta360 track-day video and your RaceBox file. Get back a finished video with lap times,
+     speed, lean angle, a track map, and a coach who goes through every turn with you.</p>
+
+  <a class="btn" id="dl" href="https://github.com/naveenp143/nav-trackday-video-editor-releases/releases/latest/download/NAV-Track-Day-Video-Editor-Windows-Locked.zip">
+    Download for Windows
+    <small id="dl-info">Free &middot; Windows 10 or 11 &middot; about 370 MB</small>
+  </a>
+  <p class="under">No account, no sign-up. Everything runs on your own computer and nothing is uploaded.</p>
+
+  <img class="shot" src="app-window.png" alt="The NAV Track Day Video Editor window">
+</header>
+
+<h2>Install it in 3 steps</h2>
+<ol class="steps">
+  <li><div class="step-body">
+    <b class="big">Unzip the download</b>
+    Open your <b>Downloads</b> folder, right-click the file you just downloaded and pick <b>Extract All</b>, then <b>Extract</b>.
+    <br><span class="mock menu"><div>Open</div><div class="hi">Extract All...</div><div>Share</div></span>
+    <p style="margin:10px 0 0;color:var(--soft)">Tip: don't open the files from inside the zip. Unzip first, or the install won't work.</p>
+  </div></li>
+
+  <li><div class="step-body">
+    <b class="big">Double-click "Install on Windows"</b>
+    In the new folder that opens, double-click this file:
+    <br><span class="file">Install on Windows.cmd</span>
+    <p style="margin:10px 0 4px">Windows may show a blue box saying <b>"Windows protected your PC"</b>. That is normal for small free programs.
+       Click <b>More info</b>, then <b>Run anyway</b>.</p>
+    <span class="mock smart"><div class="t">Windows protected your PC</div>
+      Microsoft Defender SmartScreen prevented an unrecognized app from starting...<br><u>More info</u><br>
+      <span class="run">Run anyway</span></span>
+  </div></li>
+
+  <li><div class="step-body">
+    <b class="big">Open it</b>
+    When it says it's finished, you'll find <b>NAV Track Day Video Editor</b> on your Desktop and in the Start menu.
+    Open it, pick your video, and press <b>Start</b>.
+  </div></li>
+</ol>
+
+<div class="note"><b>Nothing else to install.</b> It comes with everything it needs and doesn't need the internet.
+  It doesn't need administrator rights. It takes about 850 MB of disk space once installed.</div>
+
+<h2>What you need</h2>
+<ul class="plain">
+  <li>A Windows 10 or 11 PC. An NVIDIA graphics card makes it fastest, but any PC works. It just takes longer.</li>
+  <li>Your Insta360 video file (it starts with <b>VID_</b> and ends in <b>.insv</b>). Keep the <b>LRV_</b> file the camera made next to it.</li>
+  <li>Optional: your RaceBox file (<b>.csv</b> or <b>.vbo</b>) for that session, in the same folder. Without it the video still works and speed is estimated.</li>
+</ul>
+
+<h2>Questions</h2>
+<dl class="faq">
+  <dt>How do I update to a new version?</dt>
+  <dd>Download again from this page and run <b>Install on Windows</b> again. Your videos and settings stay put.</dd>
+  <dt>How do I remove it?</dt>
+  <dd>Windows Settings &gt; Apps &gt; Installed apps &gt; NAV Track Day Video Editor &gt; Uninstall.</dd>
+  <dt>Is there a Mac version?</dt>
+  <dd>Not ready yet. This download is for Windows only.</dd>
+  <dt>Something went wrong. What do I do?</dt>
+  <dd>The notes at the bottom of the program's window say what it was doing when it stopped. Copy them and
+      <a href="https://github.com/naveenp143/nav-trackday-video-editor-releases/issues">report the problem here</a>.</dd>
+</dl>
+
+<p style="margin-top:30px">
+  <a href="https://github.com/naveenp143/nav-trackday-video-editor-releases/raw/main/NAV%20Track%20Day%20Video%20Editor%20-%20Instruction%20Manual.pdf">Instruction manual (PDF, 2 pages)</a> &middot;
+  <a href="https://github.com/naveenp143/nav-trackday-video-editor-releases/blob/main/CHANGELOG.md">What's new</a> &middot;
+  <a href="https://github.com/naveenp143/nav-trackday-video-editor-releases/releases">All versions</a>
+</p>
+
+<footer>
+  For information and fun only. Lap times, speed, lean and coaching notes are estimates, not advice. Ride within your limits.
+  <br><span id="ver"></span>
+</footer>
+</main>
+
+<script>
+// Show the current version, its size and how many times it has been downloaded (read live from GitHub).
+fetch("https://api.github.com/repos/naveenp143/nav-trackday-video-editor-releases/releases/latest")
+  .then(r => r.ok ? r.json() : null)
+  .then(rel => {
+    if (!rel) return;
+    const zip = (rel.assets || []).find(a => /Windows-Locked\.zip$/.test(a.name));
+    if (!zip) return;
+    const mb = Math.round(zip.size / 1048576);
+    document.getElementById("dl-info").textContent = "Free · Windows 10 or 11 · " + mb + " MB · version " + rel.tag_name.replace(/^v/, "");
+    document.getElementById("ver").textContent = "Latest version " + rel.tag_name.replace(/^v/, "") + ".";
+  })
+  .catch(() => {});
+</script>
+<!-- Visit counter goes here (GoatCounter line), once the owner has made a free GoatCounter site. -->
+</body>
+</html>

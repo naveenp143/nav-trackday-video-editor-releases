@@ -145,8 +145,14 @@ fetch("https://api.github.com/repos/naveenp143/nav-trackday-video-editor-release
 // Counts this visit: unique visitors and their rough location only (see the privacy note at the bottom).
 new Image().src = "https://naveenp.duckdns.org/webhook/trackday-visit?p=" + encodeURIComponent(location.pathname) + "&r=" + encodeURIComponent(document.referrer || "");
 // Counts a press of the Download button the same way.
-document.getElementById("dl").addEventListener("click", function () {
-  try { fetch("https://naveenp.duckdns.org/webhook/trackday-visit?p=download&r=" + encodeURIComponent(document.referrer || ""), { mode: "no-cors", keepalive: true }); } catch (e) {}
+document.getElementById("dl").addEventListener("click", function (ev) {
+  var href = this.href, done = false;
+  var go = function () { if (!done) { done = true; window.location.href = href; } };
+  ev.preventDefault();
+  var ping = new Image();
+  ping.onload = ping.onerror = go;
+  ping.src = "https://naveenp.duckdns.org/webhook/trackday-visit?p=download&r=" + encodeURIComponent(document.referrer || "") + "&t=" + Date.now();
+  setTimeout(go, 800);
 });
 </script>
 </body>
